@@ -1,0 +1,42 @@
+
+
+.alert { font-size: large;
+    font-weight: bold;
+    margin: 1%;
+    padding: 1%;
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(7, 7, 7);
+}
+#success p{
+    display: inline-block;
+}
+#failure p{
+    display: inline-block;
+}
+#success{
+     /* display: none; */
+    background-color: rgb(58, 209, 91);
+}
+#failure{ 
+    /* display: none; */
+    background-color: rgb(194, 45, 45);
+}
+
+#logoutbutton{
+    margin-left: 2%;
+    padding: 0.7%;
+    background-color: rgb(148, 6, 1);
+    border-radius: 3px;
+
+}
+.alert a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(148, 6, 1);
+    color: wheat;
+    padding: 8px 16px;
+    border: 3px;
+
+}
+

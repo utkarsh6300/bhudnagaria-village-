@@ -1,0 +1,36 @@
+form{
+    text-align: center;
+    /* background-color: rgb(61, 70, 82); */
+
+    padding: 2%;
+}
+
+.btn{ margin: 1%;
+    padding: 1.2%;
+ background-color: rgb(87, 131, 105);
+    cursor: pointer;
+    transition: 1.2s;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: rgb(151, 156, 101);
+}
+label{
+    font-size: 23px;
+}
+textarea{
+    margin: 1.2%;
+    padding: 1%;
+    /* background-color: rgb(81, 107, 124); */
+    /* color: rgb(223, 8, 8); */
+    font-size: 18px;
+    border-radius: 6px;
+border: 1px solid black;
+    width:45%;
+}
+button{
+    margin-left: 2%;
+    padding: 0.7%;
+    background-color: rgb(44, 78, 117);
+    border-radius: 3px;
+}

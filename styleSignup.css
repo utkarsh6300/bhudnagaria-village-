@@ -1,0 +1,46 @@
+
+
+form {
+    text-align: center;
+    background-image: url(img/WhatsApp\ Image\ 2021-07-02\ at\ 10.11.51\ AM.jpeg);
+    background-size: 1000px 10000px;
+    width: 60%;
+    margin: auto;
+    margin-top: 2.5%;
+    padding: 3%;
+    border: solid black 1px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 2px #888;
+    font-size: large;
+}
+.formDiv{
+    /* background-color: rgb(61, 70, 82); */
+    padding: 2%;
+}
+form fieldset{ 
+    margin: 1.2%;
+     padding: 1%;
+}
+form fieldset input{ 
+    font-size: large;
+    margin: 1.2%;
+     padding: 1.6%;
+}
+
+@media only screen and (max-width:470px){
+    form fieldset input{ 
+        font-size: 12px;
+    }
+}
+.btn{ background-color: rgb(100, 141, 87);
+    padding: 2%;
+    cursor: pointer;
+    transition: 1.2s;
+    border-radius: 7px;
+}
+.btn:hover{
+    background-color: rgb(211, 145, 70);
+}
+label{
+    font-size: 23px;
+}

@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* body{
+
+    background-color: rgba(61, 70, 82, 0.726);
+} */
+/* .nav1{
+    background-color: rgb(61, 70, 82);
+} */
+.nav1 h1{
+    background-image: url(img/breakfast-690128_1920.jpg);
+}
+.nav1 h1{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 1%;
+    padding: 1.8%;
+}
+.nav1 nav{
+    /* background-color: rgb(95, 65, 80); */
+    
+    /* margin-left: 15%; */
+    justify-content: center;
+    
+    display: flex;
+    flex-direction: row;
+    
+}
+.nav1 nav a{
+    background-color: rgb(92, 99, 66);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 1.5%;
+    color: blanchedalmond;
+    transition: 2s;
+    box-shadow: 0 4px 7px rgb(87, 117, 103);
+}
+.nav1 nav a:hover{
+    background-color: rgb(90, 141, 156);
+
+}
+@media only screen and (min-width:714px){
+    .nav1 nav a:hover{
+        width: 13%;
+    }
+}
+@media only screen and (max-width:714px){
+    .nav1 nav{
+    
+        flex-direction: column;
+    }
+    .nav1 nav a{
+      width: 96.5%;
+    }
+}
+.updates{ text-align: center;
+    height: 45vh;
+    /* background-color: rgb(62, 97, 89); */
+    margin: 2%;
+    padding: 2%;
+    border-radius: 8px;
+    border: 1px solid rgb(32, 32, 32);
+}
+.updates div{
+    margin: 1%;
+}
+.news{ padding: 2%;
+    height: 70%;
+}
+.news li{
+    margin: 1%;
+    margin-top: 0;
+}
+/* .slideshow{
+background-color: rgb(204, 148, 218);
+background-image: url(img/WhatsApp\ Image\ 2021-07-02\ at\ 10.11.51\ AM.jpeg);
+    
+} */
+
+.slideshow img{
+    padding: 3%;
+    margin-left: 10%;
+    width: 80%;
+    height: auto;
+}
+.mySlides{
+    display: none;
+}
+footer{
+
+    background-image: url(img/breakfast-690128_1920.jpg);
+    /* background-color: rgb(61, 70, 82); */
+    text-align: center;
+  padding: 1.5%;
+}
+footer p{ color: white;
+    font-weight: bold;
+    font-size: large;
+    padding: 0.4%;
+}
+
+
+
+
+
+.alert { font-size: large;
+    font-weight: bold;
+    margin: 1%;
+    padding: 1%;
+    display: block;
+    text-align: center;
+    border: 1px solid rgb(7, 7, 7);
+}
+#success p{
+    display: inline-block;
+}
+#failure p{
+    display: inline-block;
+}
+#success{
+     /* display: none; */
+    background-color: rgb(58, 209, 91);
+}
+#failure{ 
+    /* display: none; */
+    background-color: rgb(194, 45, 45);
+}
+
+#logoutbutton{
+    margin-left: 2%;
+    padding: 0.7%;
+    background-color: rgb(148, 6, 1);
+    border-radius: 3px;
+
+}
+.alert a{
+    text-decoration: none;
+    display: inline-block;
+    background-color: rgb(148, 6, 1);
+    padding: 8px 16px;
+    border: 3px;
+
+}
+

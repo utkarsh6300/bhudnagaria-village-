@@ -1,0 +1,33 @@
+.info{display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(179, 143, 143);
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.photo{  
+    margin: 3%;
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    width: 74px;
+    height: 16vh;
+    background-color: rgb(22, 45, 175);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(179, 143, 143);
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    
+}
+.content p{ text-align: center;
+    padding: 3%;
+    border: 1px solid rgb(179, 143, 143);
+}

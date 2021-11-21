@@ -1,0 +1,28 @@
+.weather{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(179, 143, 143);
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.weather.contain{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(179, 143, 143);
+    width: 90%;
+    height: auto;
+    margin: 5%;
+
+}
+.contain p{
+    border: 1px solid rgb(179, 143, 143);
+    width: 80%;
+    height: auto;
+    margin: 5%;
+    padding: 3%;
+    text-align: center;
+    font-weight: bold;
+}

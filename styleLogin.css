@@ -1,0 +1,12 @@
+form input{
+    margin: 1.3%;
+  padding: 1.2%;
+  font-size: large;
+}
+form{
+    width: 80%;
+    margin-bottom: 2%;
+}
+/* .login{
+    background-color: rgb(61, 70, 82);
+} */
