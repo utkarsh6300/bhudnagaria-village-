@@ -65,15 +65,19 @@
  $phone= $_POST["phone"] ;
  $password= $_POST["password"] ;
  
- $hashedpassword= password_hash($password,PASSWORD_BCRYPT);
+//  $hashedpassword= password_hash($password,PASSWORD_BCRYPT);
 
  $number=strval($phone);
 
-//  $sql="Select * from logincredentials where phone='$phone' and password='$password'";
+ $sql="Select * from logincredentials where phone='$phone' and password='$password'";
 
 
 
- $sql="Select * from logincredentials where phone='$phone'";
+//  $sql="Select * from logincredentials where phone='$phone'";
+ $sql2="Select * from logincredentials where phone='$phone'";
+     $res2 = mysqli_query($conn, $sql2);
+     $data2=mysqli_fetch_array($res2);
+     $num2=mysqli_num_rows($res2);
      $res = mysqli_query($conn, $sql);
      $data=mysqli_fetch_array($res);
      $num=mysqli_num_rows($res);
@@ -86,7 +90,7 @@
        ; 
      }
        else
-     if($num==0){
+     if($num2==0){
         echo '
         <div id="failure" class="alert">
         <p>Signup with this number and try logging again</p>
@@ -95,15 +99,15 @@
     
         ';  
      } else
-     if(!password_verify($password,$hashedpassword)){
-        echo '
-        <div id="failure" class="alert">
-        <p>Incorrect Password</p>
+    //  if(!password_verify($password,$hashedpassword)){
+    //     echo '
+    //     <div id="failure" class="alert">
+    //     <p>Incorrect Password</p>
  
-       </div>
+    //    </div>
     
-        ';
-     } else
+    //     ';
+    //  } else
      if($num == 1){
 
          session_start();
@@ -118,6 +122,16 @@
 </div>
        ';
    }
+   else
+     if($num2==1){
+        echo '
+        <div id="failure" class="alert">
+        <p>Incorrect Password</p>
+ 
+       </div>
+    
+        ';  
+     } 
    else{
        echo '
        <div id="failure" class="alert">
