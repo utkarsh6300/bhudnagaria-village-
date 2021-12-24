@@ -68,7 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
  $password= $_POST["password"] ;
  $cpassword= $_POST["cpassword"];
 
-$hashedpassword= password_hash($password,PASSWORD_BCRYPT);
+// $hashedpassword= password_hash($password,PASSWORD_BCRYPT);
 
 $number=strval($phone);
   
@@ -114,7 +114,7 @@ if($num2!=0) {
 
 else
  if($password==$cpassword){
- $sql="INSERT INTO `logincredentials` (`sn`, `name`,`email`,`phone`,`gender`,`dob`,`password`) VALUES (NULL, '$name','$email','$phone','$gender','$dob','$hashedpassword')";
+ $sql="INSERT INTO `logincredentials` (`sn`, `name`,`email`,`phone`,`gender`,`dob`,`password`) VALUES (NULL, '$name','$email','$phone','$gender','$dob','$password')";
      $res = mysqli_query($conn, $sql);
      if($res){
        echo'
